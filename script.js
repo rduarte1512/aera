@@ -53,3 +53,5 @@ form.addEventListener('submit', event => {
   formMessage.textContent = 'Obrigada! Em breve recebes novidades da Aera.';
   form.reset();
 });
+
+import('./demo.js');
