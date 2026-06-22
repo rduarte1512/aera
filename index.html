@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="checkout.css" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -150,17 +151,17 @@
       </div>
     </section>
 
-    <section class="payment-section section-hidden" id="checkout" aria-labelledby="checkout-title">
-      <div class="section-heading checkout-heading">
+    <section class="demo-section section-hidden" id="checkout" aria-labelledby="checkout-title">
+      <div class="section-heading demo-heading">
         <p class="eyebrow">Checkout seguro</p>
         <h2 id="checkout-title">Pagamento visual premium para a Aera.</h2>
         <p>Uma experiência bonita e confiável, com cartão de crédito/débito, PayPal, Revolut Pay e códigos de desconto. Este checkout está em modo demonstração e não processa pagamentos reais.</p>
       </div>
 
-      <div class="checkout-shell">
-        <aside class="order-summary" aria-label="Resumo da encomenda">
-          <div class="secure-pill">🔒 Ambiente visual seguro</div>
-          <div class="summary-product">
+      <div class="demo-shell">
+        <aside class="demo-summary" aria-label="Resumo da encomenda">
+          <div class="demo-pill">🔒 Ambiente visual seguro</div>
+          <div class="demo-product">
             <img src="assets/nova-colecao-semana-fix.jpg" alt="Vestido floral Aera no resumo da compra" style="object-position: center top;" />
             <div>
               <span>Nova coleção</span>
@@ -189,8 +190,8 @@
           <a class="all-products-link" href="https://aera-osvhh0ea.myshopify.com/" target="_blank" rel="noopener">Ver todos os produtos na loja →</a>
         </aside>
 
-        <form class="payment-card" aria-label="Formulário de pagamento demo" novalidate>
-          <div class="checkout-topline">
+        <form class="demo-panel" aria-label="Formulário de pagamento demo" novalidate>
+          <div class="demo-topline">
             <div>
               <p class="eyebrow">Método de pagamento</p>
               <h3>Escolhe como queres pagar</h3>
@@ -198,18 +199,18 @@
             <span class="demo-badge">Demo</span>
           </div>
 
-          <div class="payment-methods" role="tablist" aria-label="Métodos de pagamento disponíveis">
-            <button type="button" class="method-card active" data-method="Cartão" aria-pressed="true">
+          <div class="method-list" role="tablist" aria-label="Métodos de pagamento disponíveis">
+            <button type="button" class="choice-tile active" data-method="Cartão" aria-pressed="true">
               <span>💳</span>
               <strong>Cartão</strong>
               <small>Crédito / Débito</small>
             </button>
-            <button type="button" class="method-card" data-method="PayPal" aria-pressed="false">
+            <button type="button" class="choice-tile" data-method="PayPal" aria-pressed="false">
               <span>🅿️</span>
               <strong>PayPal</strong>
               <small>Pagamento rápido</small>
             </button>
-            <button type="button" class="method-card" data-method="Revolut Pay" aria-pressed="false">
+            <button type="button" class="choice-tile" data-method="Revolut Pay" aria-pressed="false">
               <span>⚡</span>
               <strong>Revolut</strong>
               <small>Revolut Pay</small>
@@ -220,8 +221,8 @@
             Modo demonstração: não peças nem introduzas dados reais. Esta tela não cobra, não guarda e não envia informação de pagamento.
           </div>
 
-          <div class="payment-preview" aria-live="polite">
-            <div class="preview-card-icon">💳</div>
+          <div class="method-preview" aria-live="polite">
+            <div class="preview-icon">💳</div>
             <div>
               <span id="selected-method-label">Cartão selecionado</span>
               <strong id="selected-method-title">Pagamento por cartão de crédito/débito</strong>
@@ -229,13 +230,13 @@
             </div>
           </div>
 
-          <div class="trust-grid" aria-label="Elementos de confiança">
-            <div><strong>SSL</strong><span>Visual seguro</span></div>
+          <div class="proof-grid" aria-label="Elementos de confiança">
+            <div><strong>Visual</strong><span>Checkout moderno</span></div>
             <div><strong>0 €</strong><span>Nada é cobrado</span></div>
             <div><strong>Demo</strong><span>Sem dados reais</span></div>
           </div>
 
-          <button class="btn btn-primary checkout-submit magnetic" type="submit">Simular pagamento seguro</button>
+          <button class="btn btn-primary demo-submit magnetic" type="submit">Simular pagamento seguro</button>
           <p class="checkout-message" role="status"></p>
         </form>
       </div>
